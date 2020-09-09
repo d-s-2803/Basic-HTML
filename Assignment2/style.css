@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+body{
+    background-color: yellow;
+}
+section{
+    position: relative;
+    background-color: #FFFFBF;
+    border:1px solid black;
+    padding:20px 15px ;
+    margin: 10px 10px;
+}
+
+h1{
+    margin: 50px 50px;
+    text-align:center;
+}
+
+h2{
+    border:1px solid black;
+    position: absolute;
+    margin:0;
+    top:0;
+    right:0;
+    padding:1px;
+    width: 40%;
+}
+
+#pizza > h2{
+    background-color: skyblue ;
+}
+#pasta > h2 {
+    background-color: red ;
+}
+
+#fondue > h2 {
+    background-color: green;
+}
+
+@media (min-width:992px){
+    section{
+        left:30px;
+        float:left;
+        width:30%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    
+    #pizza , #pasta{
+        margin: 0 2% 2% 2%;
+        width: 46%;
+        float: left;
+    }
+
+    #fondue{
+        clear: left;
+        width : 96%;
+        margin: 0 2% 2% 2%;
+    }
+
+    #fondue > h2 {
+        width: 20%
+    }
+}
